@@ -1,7 +1,4 @@
 from socket import *
-from utils.Preprocess import Preprocess
-from models.intent.IntentModel import IntentModel
-from models.ner.NerModel import NerModel
 import json
 from datetime import datetime, timedelta
 
