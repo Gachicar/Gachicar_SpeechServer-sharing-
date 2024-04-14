@@ -1,3 +1,5 @@
+## 백엔드와 소켓 연결 필요없이 혼자 자연어처리 모델 테스트 해볼 수 있는 코드 
+
 from socket import *
 from Preprocess import Preprocess
 from IntentModel import IntentModel
@@ -9,7 +11,7 @@ from datetime import datetime, timedelta
 current_year = datetime.now()
 # Preprocess 객체 초기화
 p = Preprocess(word2index_dic='chatbot_dict.bin',
-               userdic='user_dic3.tsv')
+               userdic='user_dic.tsv')
 # IntentModel 초기화
 intent = IntentModel(model_name='intent_model.h5', proprocess=p)
 

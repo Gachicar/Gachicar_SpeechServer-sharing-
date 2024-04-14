@@ -1,3 +1,5 @@
+## 백엔드와 소켓 프로그래밍으로 통신하는 코드 (AI: 서버, 백엔드: 클라이언트 로 작동)
+
 from socket import *
 from Preprocess import Preprocess
 from IntentModel import IntentModel
@@ -10,7 +12,7 @@ current_year = datetime.now().year
 
 # Preprocess 객체 초기화
 p = Preprocess(word2index_dic='chatbot_dict.bin',
-               userdic='user_dic3.tsv')
+               userdic='user_dic.tsv')
 # IntentModel 초기화
 intent = IntentModel(model_name='intent_model.h5', proprocess=p)
 
